@@ -1,8 +1,11 @@
+// All data variables (synopsis, reviews, films info) are stored in data.js
+
 let synopsisText = document.getElementById("synopsis-content")
 synopsisText.textContent = synopsis
 let textOffset = synopsisText.offsetTop
 let fullHeight = synopsisText.offsetHeight
 
+// Calculate how much text should be shown based on current scroll position
 function textScrollPercent() {
     let screenBottom = window.scrollY + window.innerHeight
     if (screenBottom >= textOffset) {
@@ -21,9 +24,11 @@ window.addEventListener("scroll", function(event) {
     }
 })
 
+// Create hovering interactions for Producers section
 let producerLeft = document.getElementById("producer-left")
 let producerRight = document.getElementById("producer-right")
 
+// Fade out image & text and fade in new image, wait 0.15s in between (0.3s transition)
 producerLeft.addEventListener("mouseenter", function(event) {
     producerLeft.style.opacity = 0
     producerLeft.children[0].style.display = "none"
@@ -64,6 +69,8 @@ producerRight.addEventListener("mouseleave", function(event) {
     }, 150)
 })
 
+// Same as above, switch between reviews, fade out old components, fade in new ones
+// wait for half the transition time
 let reviewBox = document.getElementById("reviews").children[1]
 var review = document.getElementById("review")
 let reviewer = document.getElementById("reviewer")
