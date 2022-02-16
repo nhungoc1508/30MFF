@@ -1,7 +1,7 @@
 # Looking For New York - 30MFF Premiere Website
 
 > Assignment for IM-UH 1011 Communications Lab - Spring 2020\
-Last updated: Feb 2, 2022
+Last updated: Feb 17, 2022
 
 ## Project description
 This project is a one-page website for the short film created in collaboration with Alex Ko, in which we reflect on our time in New York City. On my part, I expand the idea behind the short video into a concept for a movie about a young man who abandoned his old job to go live in New York City. I use the title Looking For New York (loosely inspired by the title of the novel Looking for Alaska) to reflect the vibes I usually pick up in indie movies about youth and self-discovery.
