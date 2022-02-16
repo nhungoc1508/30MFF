@@ -85,7 +85,7 @@ hr.solid {
 }
 
 #footer-home {
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("images/footer-home.JPG");
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("images/footer-home.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
