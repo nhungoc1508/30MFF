@@ -1,5 +1,25 @@
 let synopsisText = document.getElementById("synopsis-content")
 synopsisText.textContent = synopsis
+let textOffset = synopsisText.offsetTop
+let fullHeight = synopsisText.offsetHeight
+
+function textScrollPercent() {
+    let screenBottom = window.scrollY + window.innerHeight
+    if (screenBottom >= textOffset) {
+        return (screenBottom - textOffset) / fullHeight
+    }
+}
+
+let synopsisLen = synopsis.length
+
+window.addEventListener("scroll", function(event) {
+    if (textOffset <= window.scrollY + window.innerHeight) {
+        let numChars = Math.ceil(synopsisLen * textScrollPercent()) - 600
+        numChars = Math.max(0, numChars)
+        numChars = Math.min(numChars, synopsisLen)
+        synopsisText.textContent = synopsis.slice(0, numChars)
+    }
+})
 
 let producerLeft = document.getElementById("producer-left")
 let producerRight = document.getElementById("producer-right")
@@ -82,25 +102,4 @@ arrowRight.addEventListener("click", function(event) {
         setReview(i)
         reviewBox.style.opacity = 1
     }, 150)
-})
-
-let textOffset = synopsisText.offsetTop
-let fullHeight = synopsisText.offsetHeight
-
-function textScrollPercent() {
-    let screenBottom = window.scrollY + window.innerHeight
-    if (screenBottom >= textOffset) {
-        return (screenBottom - textOffset) / fullHeight
-    }
-}
-
-let synopsisLen = synopsis.length
-
-window.addEventListener("scroll", function(event) {
-    if (textOffset <= window.scrollY + window.innerHeight) {
-        let numChars = Math.ceil(synopsisLen * textScrollPercent()) - 600
-        numChars = Math.max(0, numChars)
-        numChars = Math.min(numChars, synopsisLen)
-        synopsisText.textContent = synopsis.slice(0, numChars)
-    }
 })
