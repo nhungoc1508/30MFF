@@ -36,4 +36,4 @@ Overall, I think that I managed to stay quite close to my original design, excep
 
 ## Extra
 
-I also finished the all-films premiere web page that I made wireframes for because I previously misread the prompt. Similar to the main page for my film, that page stays quite close to the original design. I am still using the names and summaries I made up myself. To access the page, follow the “See all participating films” link at the beginning of my page.
+I also finished the all-films premiere web page that I made wireframes for because I previously misread the prompt. Similar to the main page for my film, that page stays quite close to the original design. I am still using the names and summaries I made up myself. To access the page, follow the [See all participating films](https://nhungoc1508.github.io/30MFF/home.html) link at the beginning of my page.
